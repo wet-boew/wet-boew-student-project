@@ -21,24 +21,11 @@ Almost white - #f2f2f2
  	background: none !important;
  }
 
-.title-banner{
-	padding:0 10px 15px;
-	background-color: #0e4164;
-	color:#eaebed;
-}
-
-.title-banner .container p a{
-	color:#f2f2f2 !important;
-}
-#wb-cont{
-	color:#eaebed;
-	border-bottom:none!important;
-}
 .container p a{
 	color: #135684 !important;
 }
 
-.container h2{
+#wb-cont, .container h2{
 	color: #0e4164;
 }
 
@@ -64,37 +51,7 @@ Almost white - #f2f2f2
 	background-color: #bdccd4 !important;
 	border: none;
 }
-#con-guide{
-	height:auto;
-	overflow: hidden;
-}
-#con-guide ul{
-	height:auto;
-	overflow: hidden;
-	padding:0 !important;
-}
-#con-guide ul li{
-	width:370px;;
-	height:108px;
-	margin:5px;
-	padding:10px;
-	background-color: #bdccd4 !important;
-	list-style: none;
-	float:left;
-}
-#con-guide ul li h3{
-	margin:0 0 5px 0;
-}
 
-#more-info{
-	clear:both;
-}
-#more-info ul {
-	padding:0 !important;
-}
-#more-info ul li{
-	list-style: none;
-}
 footer{
 	background-color: #135684;
 	color: #f2f2f2;
