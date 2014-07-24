@@ -26,7 +26,98 @@
 <!--<![endif]-->
 <link rel="stylesheet" href="../wet-boew/unmin/css/theme.css" />
 <style>
-a.theme:after {
+
+#wb-bc{
+	background-color: #fff;
+}
+/*wet-boew.css:224*/
+/*theme.css:332*/
+body{
+	background-color: #fff;
+}
+/*wet-boew.css:239*/
+a:hover, a:focus{
+	color: #3fa9f5;
+}
+.wb-pg-bnr{
+	background-color: #0e4164;
+	padding: 0 29px 29px;
+}
+.wb-pg-bnr h1, .wb-pg-bnr p, .wb-pg-bnr a{
+	color: #eaebed;
+}
+.wb-pg-bnr a:visited, footer a:visited{
+	color: #c694ff;
+}
+
+/**TAB STEPS**/
+#get-started-steps summary{
+	border: 1px solid #d4d6da;
+	padding: 18px;
+	overflow:hidden;	
+}
+
+#get-started-steps .panel-heading{
+	background-color: #bdccd4 ;
+}
+
+span.step-details{
+  padding: 15px 37px 0px;
+  float:left;
+
+}
+span.step-title{
+	color: #135684;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 63px;	
+}
+
+span.step-title object{
+	margin-top: -20px;
+	margin-bottom: -9px;
+	width: 56px;	
+}
+
+.circle {
+  border-radius: 50%;
+/*  behavior: url(PIE.htc);
+*/  width: 40px;
+  height: 40px;
+  float: left;
+  background-color: #0e4164;
+  border: 2px solid #135684;
+  color: #bdccd4;
+  text-align: center;
+  font-size: 23px !important;
+  margin-right: -70px;
+  margin-left: 31px;
+}
+
+#get-started-steps .tgl-panel{
+	margin-left: 1.3em;
+}
+
+/*wet-boew.css:5420*/
+details[open] > *{
+	margin-left: 0;
+}
+
+details[open] {
+  padding-bottom: 0em !important;
+}
+details[open] > * {
+  margin-left: 0 !important;
+}
+details[open] .circle {
+  background-color: #bdccd4;
+  color: #0e4164;
+}
+.panel-body h4{
+	margin-top: 4px;
+}
+/**SVGS LINKS**/
+.theme-link a:after {
   content: ""; 
   position: absolute; 
   top: 0; 
@@ -34,11 +125,33 @@ a.theme:after {
   bottom: 0; 
   left: 0;
 }
-
-a.theme {
+.theme-link a{
   position: relative;
   display: inline-block;
 }
+
+/*theme.css:36*/
+#wb-bnr{
+	background: #135684;
+
+}
+
+footer{
+	background-color: #eaebed;
+	color: #0e4164;
+}
+
+@media screen and (min-width: 480px) {
+	span.step-title{
+		font-size: 26px;
+	}
+
+	span.step-title object{
+		margin-bottom: -20px;
+		width: inherit;
+	}
+}
+
 </style>
 <!--[if lt IE 9]>
 <link href="./assets/favicon.ico" rel="shortcut icon" />
@@ -101,7 +214,7 @@ a.theme {
 
 						<div id="wb-sttl" class="col-md-8">
 							<a href="./index-en.html">
-	<object type="image/svg+xml" tabindex="-1" role="img" data="./assets/logo.svg" aria-label="Web Experience Toolkit"></object>
+	<object type="image/svg+xml" tabindex="-1" role="img" data="../wet-boew/assets/logo.svg" aria-label="Web Experience Toolkit"></object>
 	<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 </a>
 
@@ -152,48 +265,48 @@ a.theme {
 		<main role="main" property="mainContentOfPage" class="container">
 
 <div class="row">
-	<div class="container">
+	<div class="wb-pg-bnr container">
 		<h1>Getting started with the Web Experience Toolkit</h1>
 		<p>Follow these quick steps to understand how to get started using the Web Experience Toolkit on your own site to create <a href="home-en.html">usable</a>, <a href="home-en.html">accessible</a>, <a href="home-en.html">mobile-friendly websites and applications</a>. Before you get started, discover which <a href="#">variants</a> are available in the Web Experience Toolkit. Start by choosing a flexible theme. Then find the components that meet your content needs. Finally, customize display elements such as buttons and icons.</p>
 	</div>
 </div>
 
 
-		<div>
+		<div id="get-started-steps">
 			<div class="row">
 			<details>
 				<summary>
-						<span>1 Choose a theme</span>There are five themes to choose from. You define the look and feel of your website through the cascading style sheet (CSS). If you are using a content management system, then you can find more information in<a href="#">variants</a>.
+						<span class="circle">1</span><span class="step-title">Choose a theme</span><span class="step-details">There are five themes to choose from. You define the look and feel of your website through the cascading style sheet (CSS). If you are using a content management system, then you can find more information in <a href="#">variants.</a></span>
 				</summary>
 				<div class="tgl-panel">
-			<div class="row">
+			<div class="row theme-link">
 						<div class="col-md-4 col-sm-6">
 							<h4>Base theme</h4>
-							<a class="theme" href="http://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-en.html" target="_blank"><object type="image/svg+xml" tabindex="-1" role="img" data="images/basetheme.svg" aria-label="Web Experience Toolkit"></object></a>
+							<a href="http://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-en.html" target="_blank"><img src="images/baseTheme-sm.jpg" title="Base theme"></a>
 							<p>A Base theme template for creating your own theme.</p>
 							<a href="#">Download Base theme</a>
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<h4>Canada.ca theme</h4>
-							<a class="theme" href="http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-en.html" target="_blank"><object type="image/svg+xml" tabindex="-1" role="img" data="images/canada.catheme.svg" aria-label="Web Experience Toolkit"></object></a>
+							<a href="http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-en.html" target="_blank"><img src="images/canadaTheme-sm.jpg" title="Canada.ca theme"></a>
 							<p>Mandatory theme for Canada.ca users only. It implements requirements for Canada.ca</p>
 							<a href="#">Download Canada.ca theme</a>
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<h4>Intranet theme</h4>
-							<a class="theme" href="http://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-en.html" target="_blank"><object type="image/svg+xml" tabindex="-1" role="img" data="images/intranettheme.svg" aria-label="Web Experience Toolkit"></object></a>
+							<a href="http://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-en.html" target="_blank"><img src="images/intranetTheme-sm.jpg" title="Intranet theme"></a>
 							<p>Built by the community for the community, open for re-use and adapting.</p>
 							<a href="#">Download Intranet theme</a>
 						</div>
 						<div class="col-lg-4 col-md-5 col-sm-6">
 							<h4>Usability theme</h4>
-							<a class="theme" href="http://wet-boew.github.io/themes-dist/theme-gcwu-fegc/docs/ref/theme-gcwu-fegc/theme-gcwu-fegc-en.html" target="_blank"><object type="image/svg+xml" tabindex="-1" role="img" data="images/usabilitytheme.svg" aria-label="Web Experience Toolkit"></object></a>
+							<a href="http://wet-boew.github.io/themes-dist/theme-gcwu-fegc/docs/ref/theme-gcwu-fegc/theme-gcwu-fegc-en.html" target="_blank"><img src="images/usabilityTheme-sm.jpg" title="Web Usability theme"></a>
 							<p>This theme implements the Standards of Web Usability.</p>
 							<a href="#">Download Usability theme</a>
 						</div>
 						<div class="col-lg-4 col-md-5 col-sm-6">
 							<h4>WET theme</h4>
-							<a class="theme" href="http://wet-boew.github.io/wet-boew/docs/ref/theme-wet-boew/theme-wet-boew-en.html" target="_blank"><object type="image/svg+xml" tabindex="-1" role="img" data="images/wettheme.svg" aria-label="Web Experience Toolkit"></object></a>
+							<a href="http://wet-boew.github.io/wet-boew/docs/ref/theme-wet-boew/theme-wet-boew-en.html" target="_blank"><img src="images/wetTheme-sm.jpg" title="Web Experience Toolkit theme"></a>
 							<p>In use on this site, this theme is an example of how the base theme can be easily changed.</p>
 							<a href="#">Download WET theme</a>
 						</div>
@@ -204,10 +317,12 @@ a.theme {
 			<div class="row">
 			<details>
 				<summary>
-					<span>2 Components</span>The Toolkit contains reusable components to add interactive and accessible features to your site such as widgets, form validation, navigation menus, web feeds, and many more.
+					 <span class="circle">2</span><span class="step-title">Components</span> <span class="step-details">The Toolkit contains reusable components to add interactive and accessible features to your site such as widgets, form validation, navigation menus, web feeds, and many more.</span>
 				</summary>
 					<div class="panel panel-default">
-						<div class="panel-heading"><h4>Plugins</h4></div>
+						<header class="panel-heading">
+							<h3 class="panel-title">Plugins</h3>
+						</header>
 						<div class="panel-body">
 							<div class="col-md-4"><p>Each plug-in adds functionality by calling the function in the class attribute of an HTML tag.</p></div>
 							<div class="col-md-8"><h4>Featured Plug-in: Lightbox gallery</h4>
@@ -240,14 +355,16 @@ a.theme {
 									</div>
 									<div class="col-md-8 col-sm-8">
 									<p>When a user clicks on, selects or holds the image, the photo gallery opens in a fullscreen lightbox where they can view the images one by one.</p>
-									<a class= "btn btn-default" href="#">Learn more</a>
+									<a class= "btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html">Learn more</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default polyfill">
-						<div class="panel-heading"><h4>Polyfills</h4></div>
+					<div class="panel panel-default">
+						<header class="panel-heading">
+							<h3 class="panel-title">Polyfills</h3>
+						</header>
 						<div class="panel-body">
 							<div class="col-md-4"><p>Polyfills are JavaScript components that mimic the behaviour of HTML5 tags in browsers in order to provide backwards compatibility for browsers that do not support HTML5.</p></div>
 							<div class="col-md-8"><h4>Featured Polyfill: Autocomplete</h4>
@@ -291,7 +408,7 @@ a.theme {
 							
 									<div class="col-md-8 col-sm-8 col-xs-12">
 									<p>For example, when a user types a V into a field called City, all cities beginning with V will appear in the text box.</p>
-									<a class="btn btn-default" href="#">Learn more</a>
+									<a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/datalist/datalist-en.html">Learn more</a>
 									</div>
 								
 								</div>
@@ -303,11 +420,13 @@ a.theme {
 			<div class="row">
 			<details>
 				<summary>
-					<span>3 Design elements</span>This guide explains how to design front-end elements of your website by changing the cascading style sheet (CSS). Let the magic begin!
+					<span class="circle">3</span><span class="step-title">Design elements</span><span class="step-details">This guide explains how to design front-end elements of your website by changing the cascading style sheet (CSS). Let the magic begin!</span>
 				</summary>
 
 					<div class="panel panel-default">
-						<div class="panel-heading"><h4>Core design elements</h4></div>
+						<header class="panel-heading">
+							<h3 class="panel-title">Core design elements</h3>
+						</header>
 						<div class="panel-body">
 							<div class="col-md-4"><p>Here are some reusable and customizable design elements that you can use in designing your website. You can find more design elements in the <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/index-en.html" target="_blank">design guide.</a></p>
 							<div class="row">
