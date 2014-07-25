@@ -7,28 +7,41 @@ p {
 a{
 	font-weight: bold;
 }
+.title-banner{
+	padding:0 10px 15px;
+	background-color: #0e4164;
+	color:#eaebed;
+}
 
+.title-banner .container p a{
+	color:#f2f2f2 !important;
+}
+#wb-cont{
+	color:#eaebed !important;
+	border-bottom:none!important;
+}
 #upcoming{
 	margin-bottom: 10px;
 	padding:2px;
-
 }
-
 #past{
 	width:100%;
 	padding-bottom: 20px;
-	background-color:#bdccd4;
+	background-color: #eaebed;
 }
 #past h2{
 	margin-top: 20px !important;
 	padding-top: 3px !important;
 }
-
-#past .container section{
+#past section{
 	padding-bottom: 20px;
 	border-bottom:1px solid #135684;
 }
-/*#past .container section:last-child{
-	padding-bottom: 10px;
-	border-bottom:none;
-}*/
+footer{
+	background-color: #eaebed;
+	color: #0e4164;
+}
+footer a{
+	color: #0e4164;
+}
+
