@@ -1,7 +1,3 @@
-$darkBlue: #135684;
-$skyBlue: #bdccd4;
-$darkerBlue: #0e4164;
-
 body, #wb-bc {
   background: none !important;
 }
@@ -20,7 +16,7 @@ body, #wb-bc {
 
 .container {
   p a {
-    color: $darkBlue !important;
+    color: #135684 !important;
   }
   h2 {
     color: #0e4164;
@@ -31,18 +27,17 @@ body, #wb-bc {
   padding: 1% 10% 2% 2% !important;
 }
 
-main{
+main {
   margin: auto !important;
 }
-
 
 #wb-cont {
   color: #eaebed;
   border-bottom: none!important;
 }
 
-
 /**Desktop menu**/
+
 #wb-sm {
   background-color: #eaebed !important;
   .menu > li {
@@ -51,60 +46,54 @@ main{
       border-left: 1px solid #0e4164 !important;
       text-shadow: none;
       &:hover {
-        background-color: $skyBlue !important;
+        background-color: #bdccd4 !important;
       }
     }
     &.active > a {
-      background-color: $skyBlue !important;
+      background-color: #bdccd4 !important;
     }
   }
 }
 
 .wb-menu .sm {
-  background-color: $skyBlue !important;
+  background-color: #bdccd4 !important;
   border: none;
 }
 
 /*Mobile menu**/
+
 #mb-pnl {
-
-  .sm-pnl{
+  .sm-pnl {
     background-color: #eaebed !important;
-    color: $darkerBlue !important;
-      summary, summary:hover, a{
-      color: $darkerBlue !important;
+    color: #0e4164 !important;
+    summary {
+      color: #0e4164 !important;
+      &:hover {
+        color: #0e4164 !important;
       }
+    }
+    a {
+      color: #0e4164 !important;
+    }
   }
-
-  .info-pnl{
-    background-color: $darkBlue !important;
+  .info-pnl, &.modal-content {
+    background-color: #135684 !important;
   }
-
-}
-
-#mb-pnl.modal-content{
-        background-color: $darkBlue !important;
-
 }
 
 footer {
-  background-color: $darkBlue;
-  color: #f2f2f2;
-  a {
-    color: #f2f2f2;
-  }
+  background-color: #eaebed;
+  color: #0e4164;
 }
 
 .actionBtn {
-  color: $darkerBlue !important;
-  // font-weight: bold !important;
+  color: #0e4164 !important;
   border-radius: 5px;
   &:hover {
-    background-color: $skyBlue !important;
+    background-color: #bdccd4 !important;
     border: 1px solid #999;
   }
 }
-
 
 /****Tabs****/
 
@@ -112,10 +101,12 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
-  h2{
-    color: $darkBlue !important;
+  position: relative;
+  z-index: 1;
+  h2 {
+    color: #135684 !important;
   }
-  h4{
+  h4 {
     margin: 4px 0 4px 0 !important;
   }
   li {
@@ -123,7 +114,7 @@ footer {
     a {
       color: #135684;
     }
-    &:focus{
+    &:focus {
       background: #ccc;
       background: rgba(204, 204, 204, 0.9);
     }
@@ -153,103 +144,84 @@ footer {
       }
     }
   }
-  position: relative;
-  z-index: 1;
-
-
-  details  {
-    padding: 0 0; 
-    summary{
+  details {
+    padding: 0 0;
+    summary {
       border: 1px solid #d4d6da;
       padding: 18px;
-
-      .titles{
-        margin-top: -68px;
-        margin-left: 52px;
+      overflow: hidden;
+      .step-title {
+        color: #135684;
+        font-size: 26px;
+        font-weight: bold;
+        margin-left: 63px;
       }
-
-      .descrip{
-        padding-left: 2px;
-        margin-top: 49px;
+      .step-details {
+        padding: 15px 37px 0px;
+        float: left;
       }
     }
-
-    .tgl-panel{
-        overflow: hidden;
-        padding-bottom: 15px;
-        margin: 0 auto;
-
-      h4{
+    .tgl-panel {
+      overflow: hidden;
+      padding-bottom: 15px;
+      margin: 0 auto;
+      h4 {
         padding-top: 15px;
       }
-
-      .theme img{
+      .theme img {
         border: 1px solid #ccc;
       }
     }
-
-
-    .panel-heading{
-      background-color: $skyBlue !important;
+    .panel-heading {
+      background-color: #bdccd4 !important;
     }
-
-    .lightbox img{
+    .lightbox img {
       width: inherit;
     }
-
     .polyfill {
-      
-      input{
+      input {
         width: 100%;
       }
-    
-    .cityeg{
-      padding-bottom: 10px;
-      }  
+      .cityeg {
+        padding-bottom: 10px;
+      }
     }
-
-    .row{
+    .row {
       padding: 20px 0 30px 0;
     }
-
-    img{
-        width:100%;
-    }  
-  }
-
-  details[open]{
+    &[open] {
       padding-bottom: 0em !important;
+      > * {
+        margin-left: 0 !important;
+      }
+      .get-started-circle {
+        background-color: #bdccd4;
+        color: #0e4164;
+      }
+    }
   }
-  details[open] > *{
-      margin-left: 0 !important;
-  }
-  details[open] .circle{
-      background-color: $skyBlue;
-      color: $darkerBlue;
-  }
-
 }
 
 /**numbers**/
-.circle {
+
+.get-started-circle {
   border-radius: 50%;
-  behavior: url(PIE.htc);
   width: 40px;
   height: 40px;
   float: left;
-  background-color: $darkerBlue;
-  border: 2px solid $darkBlue;
-  color: $skyBlue;
+  background-color: #0e4164;
+  border: 2px solid #135684;
+  color: #bdccd4;
   text-align: center;
-  font-size: 23px !important;
-  margin-top: -9px;
-  margin-right: 10px;
+  font-size: 23px;
+  margin-right: -70px;
+  margin-left: 31px;
 }
 
 /*Mobile Settings*/
 @media screen and (min-width: 480px) {
-  .polyfill input{
-  width: iherit;
-}
-
+  /* line 251, gettingstarted.scss */
+  .polyfill input {
+    width: iherit;
+  }
 }

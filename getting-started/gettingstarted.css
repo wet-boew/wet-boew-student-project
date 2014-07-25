@@ -1,90 +1,72 @@
-/* line 5, gettingstarted.scss */
 body, #wb-bc {
   background: none !important;
 }
 
-/* line 9, gettingstarted.scss */
 .title-banner {
   padding: 0 10px 15px;
   background-color: #0e4164;
   color: #eaebed;
 }
-/* line 13, gettingstarted.scss */
 .title-banner .container p a {
   color: #f2f2f2 !important;
 }
-/* line 15, gettingstarted.scss */
 .title-banner .container p a:hover {
   color: #3fa9f5 !important;
 }
 
-/* line 22, gettingstarted.scss */
 .container p a {
   color: #135684 !important;
 }
-/* line 25, gettingstarted.scss */
 .container h2 {
   color: #0e4164;
 }
 
-/* line 30, gettingstarted.scss */
 .containerMod {
   padding: 1% 10% 2% 2% !important;
 }
 
-/* line 34, gettingstarted.scss */
 main {
   margin: auto !important;
 }
 
-/* line 39, gettingstarted.scss */
 #wb-cont {
   color: #eaebed;
   border-bottom: none!important;
 }
 
 /**Desktop menu**/
-/* line 46, gettingstarted.scss */
 #wb-sm {
   background-color: #eaebed !important;
 }
-/* line 49, gettingstarted.scss */
 #wb-sm .menu > li > a {
   color: #0e4164 !important;
   border-left: 1px solid #0e4164 !important;
   text-shadow: none;
 }
-/* line 53, gettingstarted.scss */
 #wb-sm .menu > li > a:hover {
   background-color: #bdccd4 !important;
 }
-/* line 57, gettingstarted.scss */
 #wb-sm .menu > li.active > a {
   background-color: #bdccd4 !important;
 }
 
-/* line 63, gettingstarted.scss */
 .wb-menu .sm {
   background-color: #bdccd4 !important;
   border: none;
 }
 
 /*Mobile menu**/
-/* line 71, gettingstarted.scss */
 #mb-pnl .sm-pnl {
   background-color: #eaebed !important;
   color: #0e4164 !important;
 }
-/* line 74, gettingstarted.scss */
 #mb-pnl .sm-pnl summary, #mb-pnl .sm-pnl summary:hover, #mb-pnl .sm-pnl a {
   color: #0e4164 !important;
 }
-/* line 79, gettingstarted.scss */
 #mb-pnl .info-pnl {
   background-color: #135684 !important;
 }
 
-/* line 85, gettingstarted.scss */
 #mb-pnl.modal-content {
   background-color: #135684 !important;
 }
@@ -94,19 +76,16 @@ footer{
   color: #0e4164;
 }
 
-/* line 98, gettingstarted.scss */
 .actionBtn {
   color: #0e4164 !important;
   border-radius: 5px;
 }
-/* line 102, gettingstarted.scss */
 .actionBtn:hover {
   background-color: #bdccd4 !important;
   border: 1px solid #999;
 }
 
 /****Tabs****/
-/* line 111, gettingstarted.scss */
 .steps {
   list-style: none;
   margin: 0;
@@ -114,130 +93,108 @@ footer{
   position: relative;
   z-index: 1;
 }
-/* line 115, gettingstarted.scss */
 .steps h2 {
   color: #135684 !important;
 }
-/* line 118, gettingstarted.scss */
 .steps h4 {
   margin: 4px 0 4px 0 !important;
 }
-/* line 121, gettingstarted.scss */
 .steps li {
   list-style-type: none;
 }
-/* line 123, gettingstarted.scss */
 .steps li a {
   color: #135684;
 }
-/* line 126, gettingstarted.scss */
 .steps li:focus {
   background: #ccc;
   background: rgba(204, 204, 204, 0.9);
 }
-/* line 130, gettingstarted.scss */
 .steps li.active {
   background: #fff;
   border-bottom: 0;
   cursor: default;
   padding-bottom: 1px;
 }
-/* line 135, gettingstarted.scss */
 .steps li.active a {
   border-top: 4px solid #666;
   cursor: default;
   padding-top: 6px;
 }
-/* line 141, gettingstarted.scss */
 .steps li.tab-count {
   line-height: normal;
 }
-/* line 143, gettingstarted.scss */
 .steps li.tab-count > div {
   position: relative;
   top: 0.4em;
 }
-/* line 147, gettingstarted.scss */
 .steps li.tab-count .curr-count {
   font-size: 1.5em;
 }
-/* line 150, gettingstarted.scss */
 .steps li.tab-count:focus {
   background: transparent;
   cursor: default;
 }
-/* line 160, gettingstarted.scss */
+
 .steps details {
   padding: 0 0;
 }
-/* line 162, gettingstarted.scss */
 .steps details summary {
   border: 1px solid #d4d6da;
   padding: 18px;
+  overflow: hidden;
 }
-/* line 166, gettingstarted.scss */
-.steps details summary .titles {
-  margin-top: -68px;
-  margin-left: 52px;
+.steps details summary .step-title {
+  color: #135684;
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 63px;
 }
-/* line 171, gettingstarted.scss */
-.steps details summary .descrip {
-  padding-left: 2px;
-  margin-top: 49px;
+.steps details summary .step-details {
+  padding: 15px 37px 0px;
+  float: left;
 }
-/* line 177, gettingstarted.scss */
 .steps details .tgl-panel {
   overflow: hidden;
   padding-bottom: 15px;
   margin: 0 auto;
 }
-/* line 182, gettingstarted.scss */
 .steps details .tgl-panel h4 {
   padding-top: 15px;
 }
-/* line 186, gettingstarted.scss */
 .steps details .tgl-panel .theme img {
   border: 1px solid #ccc;
 }
-/* line 192, gettingstarted.scss */
 .steps details .panel-heading {
   background-color: #bdccd4 !important;
 }
-/* line 196, gettingstarted.scss */
 .steps details .lightbox img {
   width: inherit;
 }
-/* line 202, gettingstarted.scss */
 .steps details .polyfill input {
   width: 100%;
 }
-/* line 206, gettingstarted.scss */
 .steps details .polyfill .cityeg {
   padding-bottom: 10px;
 }
-/* line 211, gettingstarted.scss */
 .steps details .row {
   padding: 20px 0 30px 0;
 }
-/* line 220, gettingstarted.scss */
 .steps details[open] {
   padding-bottom: 0em !important;
 }
-/* line 223, gettingstarted.scss */
 .steps details[open] > * {
   margin-left: 0 !important;
 }
-/* line 226, gettingstarted.scss */
-.steps details[open] .circle {
+
+.steps details[open] .get-started-circle {
   background-color: #bdccd4;
   color: #0e4164;
 }
 
 /**numbers**/
-/* line 234, gettingstarted.scss */
-.circle {
+
+.get-started-circle {
   border-radius: 50%;
-  behavior: url(PIE.htc);
   width: 40px;
   height: 40px;
   float: left;
@@ -245,23 +202,9 @@ footer{
   border: 2px solid #135684;
   color: #bdccd4;
   text-align: center;
-  font-size: 23px !important;
-  margin-top: -9px;
-  margin-right: 10px;
-}
-
-a.theme:after {
-  content: ""; 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
-  left: 0;
-}
-
-a.theme {
-  position: relative;
-  display: inline-block;
+  font-size: 23px;
+  margin-right: -70px;
+  margin-left: 31px;
 }
 
 
