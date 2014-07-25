@@ -4,10 +4,10 @@ p {
 	margin-bottom: 0 !important;
 	margin-top: 0 !important;
 }
-a{
+/*a{
 	font-weight: bold;
 }
-.title-banner{
+*/.title-banner{
 	padding:0 10px 15px;
 	background-color: #0e4164;
 	color:#eaebed;
