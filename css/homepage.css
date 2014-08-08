@@ -1,0 +1,253 @@
+/**
+ *   Color scheme
+ 
+Almost black - #1a1a1a
+Gray - #474747
+Bluey blue - #135684
+Dark blue - #0e4164
+Sky blue - #bdccd4
+Lighter sky blue - #eaebed
+Light Blue gray - #d4d6da
+Almost white - #f2f2f2
+
+*/
+
+
+
+/**
+ *   General
+ */
+ body, #wb-bc{
+ 	background: none !important;
+ }
+
+.title-banner{
+	padding:0 10px 15px;
+	background-color: #0e4164;
+	color:#eaebed;
+}
+
+.title-banner .container p a{
+	color:#f2f2f2 !important;
+}
+
+.tri-arrow{
+	width:0;
+	height:0;
+	margin-bottom: 18px;
+	border-left:20px solid transparent;
+	border-right:20px solid transparent;
+	border-top: 25px solid #0e4164;
+	position:relative;
+	left:49%;
+}
+
+
+.container p a{
+	color: #135684 !important;
+}
+
+.container h2{
+	color: #0e4164;
+}
+
+.containter-mod{
+	padding: 1% 15% 0 15% !important;
+	text-align: center;
+}
+
+.download-btn{
+	width: 181px;
+	height: 53px;
+	padding:13px;
+	background-color: #bdccd4;
+	border-radius: 5px;
+	display: inline-block;
+}
+.download-btn:hover{
+	background-color: #f2f2f2;
+	border:1px solid #999;
+}
+.download-btn a {
+	color:#0e4164;
+	text-decoration: none;
+}
+
+.github-update{
+	background-color: #eaebed;
+}
+.github-update .container p {
+	margin:1.5%;
+	color:#0e4164;
+	float: left;
+	text-align: center;
+}
+.github-update .container p:first-child{
+	margin-left: 30%;
+	padding-right: 4.4%;
+	border-right: 2px solid #0e4164;
+}
+
+.high-light{
+	background-color: #bdccd4;
+	color:#0e4164;
+}
+.high-light p {
+	margin-top: 18px;
+}
+.big-font{
+	margin-top: -32px;
+	font-size: 85px;
+	float: left;
+}
+.right{
+	margin-top: -16px;
+	margin-bottom: -20px;
+	float: right;
+}
+
+.float-box{
+	width: 50%;
+	padding-right: 5%;
+	float:left;
+}
+
+.float-box h4{
+	color:#135684;
+}
+
+#started-info{
+	padding-bottom:25px;
+	background-color: #bdccd4;
+}
+
+#talk-info{
+	padding-bottom:25px;
+	background-color: #eaebed;
+}
+
+.logo-imgs{
+	max-width: 30%;
+	margin: 2% 3% 0 0;
+	display: inline;
+	vertical-align: bottom;
+}
+
+
+
+#wb-cont{
+	color:#eaebed;
+	border-bottom:none!important;
+}
+
+#wb-bnr {
+	background: #135684 !important;
+}
+
+#wb-sm{
+	background-color: #eaebed !important;
+}
+
+#wb-sm .menu > li > a{
+	color: #0e4164 !important;
+	border-left: 1px solid #0e4164 !important;
+	text-shadow: none;
+}
+
+#wb-sm .menu > li > a:hover, #wb-sm .menu > li.active > a{
+	background-color: #bdccd4 !important;
+}
+
+.wb-menu .sm{
+	background-color: #bdccd4 !important;
+	border: none;
+}
+#con-guide{
+	height:auto;
+	overflow: hidden;
+}
+#con-guide ul{
+	height:auto;
+	overflow: hidden;
+	padding:0 !important;
+}
+#con-guide ul li{
+	width:370px;;
+	height:108px;
+	margin:5px;
+	padding:10px;
+	background-color: #bdccd4 !important;
+	list-style: none;
+	float:left;
+}
+#con-guide ul li h3{
+	margin:0 0 5px 0;
+}
+
+#more-info{
+	clear:both;
+}
+#more-info ul {
+	padding:0 !important;
+}
+#more-info ul li{
+	list-style: none;
+}
+footer{
+	background-color: #135684;
+	color: #f2f2f2;
+
+}
+
+footer a{
+	color: #f2f2f2;
+}
+
+#footer-container{
+	background-color: #135684;
+}
+
+
+/*Mobile Settings*/
+
+@media (max-width:480px){
+	#started-info{
+		padding-bottom: 13px;
+		background-color: #ffffff;
+		border: 1px solid #bdccd4;
+	}
+	#started-info h2{
+		margin-top: 15px;
+	}
+	#talk-info{
+		margin-top: 5px;
+		padding-bottom: 13px;
+		background-color: #ffffff;
+		border: 1px solid #eaebed;
+	}
+	#talk-info h2{
+		margin-top: 15px;
+	}
+}
+
+@media (max-width:768px) {
+
+	.github-update .container p:first-child{
+		margin-left: 0;
+		padding-right:0;
+		border-right:none;
+	}
+	.github-update .container p {
+		float:none;
+	}
+	.float-box{
+		width:100%;
+		float:none;
+	}
+		.logo-imgs{
+		max-width: 70%;
+		margin: 20px 0 0 0;
+		display: block;
+	}
+}
+
