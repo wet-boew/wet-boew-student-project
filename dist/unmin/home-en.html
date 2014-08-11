@@ -34,7 +34,59 @@
 <![endif]-->
 
 <noscript><link rel="stylesheet" href="./css/noscript.css" /></noscript>
+	<style type="text/css">
+			.main-top-clr{
+				padding: 15px 0 15px 0;
+				background-color: #0e4164;
+				color:#eaebed;
+				text-align:center;
+			}
+			.txt-aln-ctr{
+				text-align: center;
+			}
+			.hdr-clr{
+				color:#0e4164;
+			}
+			.hdr4-clr .col-md-6 > h4{
+				color:#135684;
+			}
+			.im-lnk-1{
+				padding-bottom: 15px;
+				background-color: #bdccd4;
+			}
+			.im-lnk-2{
+				padding-bottom: 15px;
+				background-color: #eaebed;
+			}
 
+	
+		.tri-arrow{
+			width:0;
+			height:0;
+			margin: 0 auto;
+			border-left:20px solid transparent;
+			border-right:20px solid transparent;
+			border-top: 25px solid #0e4164;
+		}
+		.title-banner p a{
+			color:#f2f2f2;
+		}
+		.github-update{
+			padding:10px 0 10px 0;
+			background-color: #eaebed;
+		}
+		.github-update p {
+			margin:0;
+			color:#0e4164;
+			text-align: center;
+		}
+		.logo-imgs{
+			max-width:65%;
+		}
+		.logo-imgs2{
+			margin-top:34px;
+		}
+		</style>
 	</head>
 
 	<body vocab="http://schema.org/" typeof="WebPage" class="newdesign">
@@ -146,168 +198,147 @@
 
 
 
-<section class="alert alert-info">
-	<h2 class="h3">Looking for WET v3.1?</h2>
-	<p>WET v4.0 is now the current version. There is a new location for the <a href="http://wet-boew.github.io/v3.1-ci/index-en.html">current page in WET v3.1</a>.</p>
-</section>
 
 
 
-		
-			<div class="row"><h1 id="wb-cont" property="name">Web Experience Toolkit (WET)</h1>
+<div class="row main-top-clr">
+
+			
+
+	<section class="row">
+
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<!-- choose which is better, new img tag or the version copied from the logo in the header -->
+			<!--<img src="images/logo.svg" class="img-responsive" alt="Logo for Web Experience Toolkit"> -->
+			<object type="image/svg+xml" tabindex="-1" data="./assets/logo.svg"></object>
+		</div>
+		<div class="col-md-3"></div>
+	<div class="col-md-12 txt-aln-ctr">
+			<p>The Web Experience Toolkit is free software for building websites that are accessible, usable, interoperable, mobile-friendly and multilingual.</p>
+		</div>
+
+
+	</section>
+
+		<div class="row">
+			<div class="col-md-12">
+				<a href="docs/versions/dwnld-en.html" class="btn btn-default btn-lg btn-pos" role="button">Download v4.0</a>
+			</div>
+		</div>
+
+
 </div>
-			
+		
+<div class="row">
+	<div class="col-md-12">
+		<div class="tri-arrow"></div>
+	</div>
+</div>
+<!-- Need to add GitHub data display -->
+<div class="row github-update">
+	<div class="col-md-12">
+		<!-- Remove and add automatically updating GitHub info -->
+		<p><span class="gitmsg">Github Update: </span><span class="gitmsg amount">24 pull requests merged by 3 people 5 hours ago</span></p>
+	</div>
+</div>
+<!-- Need to add slider with quotes and links from articles about WET -->
 
+<section class="row">
 
+	<div class="col-md-12">
+		<h2 class="hdr-clr">Why use the Web Experience Toolkit?</h2>
+	</div>
 
-			
-<section>
-	<h2 id="about">What is the Web Experience Toolkit?</h2>
-	<ul>
-		<li>An <a href="docs/ref/accolades-en.html#awards">award-winning</a> front-end framework for building websites that are <a href="#accessibility">accessible</a>, <a href="#usability">usable</a>, <a href="#interoperability">interoperable</a>, <a href="#mobile-friendly-responsive-design">mobile friendly</a> and <a href="#multilingual">multilingual</a></li>
-		<li>A collection of <a href="#themeable-and-reusable">flexible and themeable templates and reusable components</a></li>
-		<li>A <a href="#collaborative-approach">collaborative open source project led by the Government of Canada</a></li>
-	</ul>
 </section>
 
-<section>
-	<h2 id="key">Key resources</h2>
-	<ul>
-		<li><a href="docs/index-en.html">Documentation</a></li>
-		<li><a href="docs/versions/dwnld-en.html">Downloads</a></li>
-		<li><a href="demos/index-en.html">Examples</a></li>
-		<li><a href="docs/versions/index-en.html">Version history</a> and <a href="docs/versions/rdmp-en.html">roadmap</a></li>
-		<li><a href="License-en.html">Terms and conditions</a> (MIT license)</li>
-		<li><a href="https://github.com/wet-boew/wet-boew/">Source code repository</a> and <a href="docs/start-en.html#develop">contributing guidelines</a></li>
-		<li><a href="docs/comms-en.html">Communications material</a></li>
-		<li><a href="docs/ref/wetsites-en.html">Websites using WET</a></li>
-	</ul>
+		<section class="row hdr4-clr">
+
+			<div class="col-md-6">
+				<h4>Accessible and Usable</h4>
+				<p>Complies to the <a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">Government of Canada's Web Standards</a>. <a href="http://www.w3.org/TR/WCAG20/">WCAG 2.0 AA</a> compliant so it is accessible to persons with disabilities. Iterative approach to design.</p>
+			</div>
+			<div class="col-md-6">
+				<h4>Growing community</h4>
+				<p><a href="https://github.com/wet-boew/wet-boew">Openly developed on GitHub</a> by a diverse community of contributors. Multi-level review process for contributions to ensure code integrity. <a href="https://help.github.com/articles/signing-up-for-a-new-github-account">Become a member!</a></p>
+			</div>
+
+		</section>
+
+		<section class="row hdr4-clr">
+
+			<div class="col-md-6">
+				<h4>Mobile-friendly</h4>
+				<p>Responsive, light-weight pages make it desktop and mobile friendly. It has touchscreen support and has optimized performance.</p>
+			</div>
+			<div class="col-md-6">
+			<h4>Interoperable</h4>
+				<p>Supporting a wide variety of browsers (IE, Firefox, Chrome, Safari, Opera). Building support for HTML data (<a href="http://www.w3.org/TR/rdfa-lite/">RDFa 1.1 Lite</a>, <a href="https://schema.org/">Schema.org</a>). Leverages native <a href="http://www.w3.org/TR/html5/">HTML5</a> support.</p>
+			</div>
+
+		</section>
+
+		<section class="row hdr4-clr">
+
+			<div class="col-md-6">
+				<h4>Award-winning</h4>
+				<p><a href="docs/ref/accolades-en.html#awards">Award-winning</a> code library for building innovative websites. Known for its efforts in reducing research and development costs.</p>
+			</div>
+			<div class="col-md-6">
+				<h4>Flexible and reusable</h4>
+				<p><a href="License-en.html">Licensed for non-commercial or commercial reuse</a> (MIT license). Reusable plugins, widgets, and <a href="docs/ref/themesstyle-en.html">5 themeable templates</a> that can be enhanced through CSS. <a href="docs/ref/variants-en.html">Adapted to various CMS and programming frameworks.</a></p>
+			</div>
+
+		</section>
+
+
+
+<section class="row im-lnk-1">
+
+	<div class="col-md-12">
+		<h2><a href="docs/start-en.html">Let’s get started</a></h2>
+		<p>What are you waiting for? Learn more about how the Web Experience Toolkit is built and what's included. We'll cover the basics and help you start building!</p>
+	</div>
+
 </section>
 
-<section>
-	<h2 id="benefits">Benefits</h2>
+<section class="row im-lnk-2">
 
-	<section>
-		<h3 id="accessibility">Accessibility</h3>
-		<ul>
-			<li>Conforms to <a href="http://www.w3.org/TR/WCAG20/">WCAG 2.0</a> level AA</li>
-			<li>Leverages <a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a> to further enhance accessibility</li>
-			<li>Assistive technology testing (Access Working Group)</li>
-		</ul>
-	</section>
+	<div class="col-md-12">
+		<h2><a href="https://github.com/wet-boew/wet-boew/issues/new">Talk to us</a></h2>
+		<p>Submit an issue on GitHub to tell us about a bug or request a feature. Not sure how to contribute? <a href="docs/contrib-en.html">Read our contribution guidelines.</a></p>
+	</div>
 
-	<section>
-		<h3 id="usability">Usability</h3>
-		<ul>
-			<li>Iterative approach to design</li>
-			<li>Design patterns and usability testing (User Experience Working Group)</li>
-		</ul>
-	</section>
-
-	<section>
-		<h3 id="interoperability">Interoperability</h3>
-		<ul>
-			<li><a href="http://www.w3.org/TR/html5/">HTML5</a>-first approach (leveraging native HTML5 support and filling support gaps with “polyfills”)</li>
-			<li>Supporting a wide variety of browsers (IE, Firefox, Chrome, Safari, Opera)</li>
-			<li>Building support for HTML data (<a href="http://www.w3.org/TR/rdfa-lite/">RDFa 1.1 Lite</a>, <a href="http://www.schema.org/">Schema.org</a>)</li>
-		</ul>
-	</section>
-
-	<section>
-		<h3 id="mobile-friendly-responsive-design">Mobile friendly responsive design</h3>
-		<ul>
-			<li>Adapts to different screen sizes and device capabilities</li>
-			<li>Touchscreen support</li>
-			<li>Optimized for performance</li>
-			<li>Building support for device-based mobile applications</li>
-		</ul>
-	</section>
-
-	<section>
-		<h3 id="multilingual">Multilingual</h3>
-		<ul>
-			<li>Currently supports 33 languages (including right-to-left languages)
-				<ul>
-					<li>English</li>
-					<li>French</li>
-					<li>Afrikaans</li>
-					<li>Albanian</li>
-					<li>Arabic</li>
-					<li>Armenian</li>
-					<li>Bulgarian</li>
-					<li>Chinese</li>
-					<li>Chinese (Simplified)</li>
-					<li>Czech</li>
-					<li>Dutch</li>
-					<li>Estonian</li>
-					<li>German</li>
-					<li>Greek</li>
-					<li>Hindi</li>
-					<li>Hungarian</li>
-					<li>Icelandic</li>
-					<li>Indonesian</li>
-					<li>Italian</li>
-					<li>Japanese</li>
-					<li>Korean</li>
-					<li>Latvian</li>
-					<li>Lithuanian</li>
-					<li>Polish</li>
-					<li>Portuguese</li>
-					<li>Portuguese (Brazilian)</li>
-					<li>Russian</li>
-					<li>Slovak</li>
-					<li>Spanish</li>
-					<li>Thai</li>
-					<li>Turkish</li>
-					<li>Ukranian</li>
-					<li>Vietnamese</li>
-				</ul>
-			</li>
-		</ul>
-	</section>
-
-	<section>
-		<h3 id="themeable-and-reusable">Themeable and reusable</h3>
-		<ul>
-			<li>Flexible framework that supports custom themes</li>
-			<li>Includes support for <a href="docs/ref/themesstyle-en.html">5 different themes</a> including a <a href="http://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-en.html">“Base” theme</a> to use as a template</li>
-			<li>Reusable templates, <a href="docs/ref/plugins-en.html">plugins</a> and widgets</li>
-			<li><a href="docs/ref/variants-en.html">Adapted to various CMS and programming frameworks</a> (Drupal, WordPress, SharePoint (in development), DotNetNuke (in development), PHP, SSI and Java/Maven)
-		</ul>
-	</section>
-
-	<section>
-		<h3>Reduces costs by openly sharing and collaborating</h3>
-		<ul>
-			<li>Drives down research and development costs</li>
-			<li>Avoids duplication of effort</li>
-			<li>Produces better quality results</li>
-		</ul>
-	</section>
-
-	<section>
-		<h3 id="collaborative-approach">Collaborative approach</h3>
-		<ul>
-			<li>Project managed openly on GitHub, including discussion through the issues tracker</li>
-			<li>Encouraging a free flow of ideas, dialogue and innovation including sharing of challenges and ideas</li>
-			<li>External contributions welcome
-				<ul>
-					<li>Pull requests</li>
-					<li>Design patterns</li>
-					<li>Issues and suggestions</li>
-					<li>Documentation</li>
-					<li>Testing</li>
-				</ul>
-			<li>Multi-level review process for contributions to ensure code integrity (combination of automated and manual reviews)</li>
-		</ul>
-	</section>
 </section>
 
 
-			<dl id="wb-dtmd">
+
+<section class="row">
+
+	<div class="col-md-12 hdr-clr">
+		<h2>Websites built with the Web Experience Toolkit</h2>
+	</div>
+
+</section>
+
+<section class="row">
+
+	<div class="col-md-3">
+		<a href="http://ottawa.ca/en"><img src="images/OttawaLogo.jpg" class="img-responsive logo-imgs" alt="Logo for the City of Ottawa"></a>
+	</div>
+	<div class="col-md-3 col-md-offset-1">
+		<a href="http://www.cic.gc.ca/english/index.asp"><img src="images/gocLogo.jpg" class="img-responsive logo-imgs2" alt="Logo for the Government of Canada"></a>
+	</div>
+	<div class="col-md-3 col-md-offset-1">
+		<a href="http://www.ontariocolleges.ca/home"><img src="images/ontarioCollegesLogo.png" class="img-responsive" alt="Logo for Ontario Colleges.ca"></a>
+	</div>
+
+</section>
+			<dl id="wb-dtmd" property="dateModified">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">2014-04-13</time></dd>
+	<dd><time>2014-03-27</time></dd>
 </dl>
+
 
 
 		</main>
