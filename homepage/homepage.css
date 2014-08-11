@@ -32,21 +32,15 @@ Almost white - #f2f2f2
 }
 
 .tri-arrow{
+	margin:0 auto;
 	width:0;
 	height:0;
-	margin-bottom: 18px;
 	border-left:20px solid transparent;
 	border-right:20px solid transparent;
 	border-top: 25px solid #0e4164;
 	position:relative;
-	left:49%;
+	top: 35px;
 }
-
-
-.container p a{
-	color: #135684 !important;
-}
-
 .container h2{
 	color: #0e4164;
 }
@@ -59,35 +53,25 @@ Almost white - #f2f2f2
 .downloadBtn{
 	width: 181px;
 	height: 53px;
-	padding:13px;
-	background-color: #bdccd4;
+	padding:13px !important;
+	font-weight: bold !important;
 	border-radius: 5px;
-	display: inline-block;
 }
-.downloadBtn:hover{
-	background-color: #f2f2f2;
-	border:1px solid #999;
-}
-.downloadBtn a {
-	color:#0e4164;
-	text-decoration: none;
-}
-
 .githubUpdate{
 	background-color: #eaebed;
 }
-.githubUpdate .container p {
+.githubUpdate p {
 	margin:1.5%;
 	color:#0e4164;
-	float: left;
+	padding: 15px 0 0;
 	text-align: center;
 }
-.githubUpdate .container p:first-child{
-	margin-left: 30%;
-	padding-right: 4.4%;
-	border-right: 2px solid #0e4164;
+.githubUpdate span{
+	padding: 5px 4px;
 }
-
+.githubUpdate span:first-child{
+	font-weight: bold;
+}
 .highLight{
 	background-color: #bdccd4;
 	color:#0e4164;
@@ -127,7 +111,8 @@ Almost white - #f2f2f2
 }
 
 .logo-imgs{
-	max-width: 30%;
+	max-width: 18%;
+	min-width: 190px;
 	margin: 2% 3% 0 0;
 	display: inline;
 	vertical-align: bottom;
@@ -194,19 +179,12 @@ Almost white - #f2f2f2
 	list-style: none;
 }
 footer{
-	background-color: #135684;
-	color: #f2f2f2;
-
+	background-color: #eaebed;
+	color: #0e4164;
 }
-
 footer a{
-	color: #f2f2f2;
+	color: #0e4164;
 }
-
-#footer-container{
-	background-color: #135684;
-}
-
 
 /*Mobile Settings*/
 
@@ -245,7 +223,7 @@ footer a{
 		float:none;
 	}
 		.logo-imgs{
-		max-width: 70%;
+		min-width: 148px;
 		margin: 20px 0 0 0;
 		display: block;
 	}
